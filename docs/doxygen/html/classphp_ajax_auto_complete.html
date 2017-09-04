@@ -120,8 +120,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a13517d2bc7d698cef801e3fdf3302030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9959aa0b0044991f3118c087e4fbf854"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphp_ajax_auto_complete.html#a9959aa0b0044991f3118c087e4fbf854">_apply_highlight</a> ($a_json, $parts, $hl_class= 'bg-primary', $accent_insensitive=true)</td></tr>
 <tr class="separator:a9959aa0b0044991f3118c087e4fbf854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c598e098c500bff4e14f29e8c723be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphp_ajax_auto_complete.html#ab5c598e098c500bff4e14f29e8c723be">_is_positive_integer</a> ($str)</td></tr>
-<tr class="separator:ab5c598e098c500bff4e14f29e8c723be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2beb56d54bdeb85f3ce521f6636eb04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphp_ajax_auto_complete.html#af2beb56d54bdeb85f3ce521f6636eb04">_is_positive_integer</a> ($str, $length)</td></tr>
+<tr class="separator:af2beb56d54bdeb85f3ce521f6636eb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -165,7 +165,7 @@ Private Attributes</h2></td></tr>
 <p>php ajax call to create autocomplete control <a href="https://github.com/pontikis/phpAjaxAutoComplete">https://github.com/pontikis/phpAjaxAutoComplete</a></p>
 <dl class="section author"><dt>Author</dt><dd>Christos Pontikis <a href="http://pontikis.net">http://pontikis.net</a> </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Christos Pontikis  MIT <a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.7.0 (15 Jul 2017) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.7.1 (XX XXX 2017) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9f2364bf8129f00c24b8222a88a7e02c"></a>
 <div class="memitem">
@@ -310,7 +310,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab5c598e098c500bff4e14f29e8c723be"></a>
+<a class="anchor" id="af2beb56d54bdeb85f3ce521f6636eb04"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -321,8 +321,18 @@ Here is the call graph for this function:</div>
           <td class="memname">_is_positive_integer </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$str</em></td><td>)</td>
+          <td class="paramname"><em>$str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -335,6 +345,7 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">$str</td><td></td></tr>
+    <tr><td class="paramname">$length</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -438,7 +449,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classphp_ajax_auto_complete_a3ca42b27976590360b7e8063e4aa9d0f_cgraph.png" border="0" usemap="#classphp_ajax_auto_complete_a3ca42b27976590360b7e8063e4aa9d0f_cgraph" alt=""/></div>
 <map name="classphp_ajax_auto_complete_a3ca42b27976590360b7e8063e4aa9d0f_cgraph" id="classphp_ajax_auto_complete_a3ca42b27976590360b7e8063e4aa9d0f_cgraph">
 <area shape="rect" id="node2" href="classphp_ajax_auto_complete.html#ad80254f721cc735d13c6759af78ec0a0" title="_create_term_sql" alt="" coords="139,5,262,32"/>
-<area shape="rect" id="node4" href="classphp_ajax_auto_complete.html#ab5c598e098c500bff4e14f29e8c723be" title="_is_positive_integer" alt="" coords="132,56,269,83"/>
+<area shape="rect" id="node4" href="classphp_ajax_auto_complete.html#af2beb56d54bdeb85f3ce521f6636eb04" title="_is_positive_integer" alt="" coords="132,56,269,83"/>
 <area shape="rect" id="node5" href="classphp_ajax_auto_complete.html#a9959aa0b0044991f3118c087e4fbf854" title="_apply_highlight" alt="" coords="143,107,258,133"/>
 <area shape="rect" id="node3" href="classphp_ajax_auto_complete.html#a81830896a496a900814f9a8524caf0a5" title="_removeAccents" alt="" coords="317,31,437,57"/>
 <area shape="rect" id="node6" href="classphp_ajax_auto_complete.html#a13517d2bc7d698cef801e3fdf3302030" title="_mb_stripos_all" alt="" coords="321,107,434,133"/>

@@ -9,7 +9,7 @@
  * @author     Christos Pontikis http://pontikis.net
  * @copyright  Christos Pontikis
  * @license    MIT http://opensource.org/licenses/MIT
- * @version    0.7.0 (15 Jul 2017)
+ * @version    0.7.1 (XX XXX 2017)
  *
  */
 class phpAjaxAutoComplete {
@@ -190,7 +190,7 @@ class phpAjaxAutoComplete {
 					}
 				}
 			} else {
-				if($this->_is_positive_integer($this->term_parts_max) && $this->term_parts_max >= 2) {
+				if($this->_is_positive_integer($this->term_parts_max, 2) && $this->term_parts_max >= 2) {
 					$parts = explode($this->term_parts_delimiter, $this->term, (int)$this->term_parts_max);
 					foreach($parts as $key => $part) {
 						array_push($a_where_sql, $this->parts_where_sql[$key]);
@@ -400,10 +400,23 @@ class phpAjaxAutoComplete {
 	 * Check if expression is positive integer
 	 *
 	 * @param $str
+	 * @param $length
 	 * @return bool
 	 */
-	private function _is_positive_integer($str) {
-		return (is_numeric($str) && $str > 0 && $str == round($str));
+	private function _is_positive_integer($str, $length) {
+		// allow only digits
+		if(preg_match("/[^\pN]/u", $str)) {
+			return false;
+		}
+		// allow only positive values
+		if($str == 0) {
+			return false;
+		}
+		// check integer length
+		if(strlen($str) > $length) {
+			return false;
+		}
+		return true;
 	}
 
 }
